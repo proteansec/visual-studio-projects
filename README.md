@@ -1,4 +1,4 @@
-Copyright (C) 20012-2013, Dejan Lukan
+Copyright (C) 2012-2013, Dejan Lukan
 
 All rights reserved.
 
