@@ -3,13 +3,13 @@ All rights reserved.
 
 The Visual Studio Projects contain the projects described below.
 
-  - createfilee
+* createfilee
 
-  - createremotethread
+* createremotethread
   A project that uses CreateRemoteThread function to inject a DLL into chosen
   process's address space.
 
-  - detours
+* detours
 
   - dllinject
   The DLL that can be injected into some process so it can hook the IAT import
