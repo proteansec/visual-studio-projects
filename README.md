@@ -6,39 +6,39 @@ The Visual Studio Projects contain the projects described below.
 
 * **createfilee**
 
-* createremotethread
+* **createremotethread**
 
     A project that uses CreateRemoteThread function to inject a DLL into chosen process's address space.
 
-* detours
+* **detours**
 
-* dllinject
+* **dllinject**
 
     The DLL that can be injected into some process so it can hook the IAT import table.
 
-* dlltest
+* **dlltest**
 
-* drivertest
+* **drivertest**
 
-* flags
+* **flags**
 
-* hello
+* **hello**
 
-* helloworld
+* **helloworld**
 
-* ifconf
+* **ifconf**
 
-* injector
+* **injector**
 
-* isdebuggerpresent
+* **isdebuggerpresent**
 
     A project that uses IsDebuggerPresent function that can detect whether a debugger is being used to debug the current program.
 
-* kerneldebug
+* **kerneldebug**
 
-* linear_sweep
+* **linear_sweep**
 
-* setwindowshookex
+* **setwindowshookex**
 
     A project that uses SetWindowsHookEx function to inject a DLL into chosen process's address space.
 
