@@ -1,4 +1,5 @@
 Copyright (C) 20012-2013, Dejan Lukan
+
 All rights reserved.
 
 The Visual Studio Projects contain the projects described below.
