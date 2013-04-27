@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dlltest", "dlltest\dlltest.vcxproj", "{2C964A0D-0B01-4819-9EDE-DC6236003DA4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "detours", "..\detours\detours\detours.vcxproj", "{C4CA1E67-4E3B-487B-9B40-81D3DC136083}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sockettest", "..\injector\sockettest\sockettest.vcxproj", "{12116E5E-34B5-41BA-90AE-01B913EBE111}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C964A0D-0B01-4819-9EDE-DC6236003DA4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C964A0D-0B01-4819-9EDE-DC6236003DA4}.Debug|Win32.Build.0 = Debug|Win32
+		{2C964A0D-0B01-4819-9EDE-DC6236003DA4}.Release|Win32.ActiveCfg = Release|Win32
+		{2C964A0D-0B01-4819-9EDE-DC6236003DA4}.Release|Win32.Build.0 = Release|Win32
+		{C4CA1E67-4E3B-487B-9B40-81D3DC136083}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C4CA1E67-4E3B-487B-9B40-81D3DC136083}.Debug|Win32.Build.0 = Debug|Win32
+		{C4CA1E67-4E3B-487B-9B40-81D3DC136083}.Release|Win32.ActiveCfg = Release|Win32
+		{C4CA1E67-4E3B-487B-9B40-81D3DC136083}.Release|Win32.Build.0 = Release|Win32
+		{12116E5E-34B5-41BA-90AE-01B913EBE111}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12116E5E-34B5-41BA-90AE-01B913EBE111}.Debug|Win32.Build.0 = Debug|Win32
+		{12116E5E-34B5-41BA-90AE-01B913EBE111}.Release|Win32.ActiveCfg = Release|Win32
+		{12116E5E-34B5-41BA-90AE-01B913EBE111}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

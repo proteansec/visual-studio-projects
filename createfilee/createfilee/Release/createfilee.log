@@ -1,0 +1,24 @@
+﻿Build started 9.4.2013 0:01:21.
+Project "c:\documents and settings\eleanor\my documents\visual studio 2010\Projects\createfilee\createfilee\createfilee.vcxproj" on node 2 (build target(s)).
+InitializeBuildStatus:
+  Creating "Release\createfilee.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  All outputs are up-to-date.
+  All outputs are up-to-date.
+Link:
+  All outputs are up-to-date.
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\documents and settings\eleanor\my documents\visual studio 2010\Projects\createfilee\Release\createfilee.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib "C:\Program Files\Microsoft Visual Studio 10.0\VC\lib\msvcrt.lib" /NODEFAULTLIB /MANIFEST /ManifestFile:"Release\createfilee.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\documents and settings\eleanor\my documents\visual studio 2010\Projects\createfilee\Release\createfilee.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\documents and settings\eleanor\my documents\visual studio 2010\Projects\createfilee\Release\createfilee.lib" /MACHINE:X86 Release\createfilee.obj
+  Release\stdafx.obj
+  Generating code
+  Finished generating code
+  createfilee.vcxproj -> c:\documents and settings\eleanor\my documents\visual studio 2010\Projects\createfilee\Release\createfilee.exe
+Manifest:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"c:\documents and settings\eleanor\my documents\visual studio 2010\Projects\createfilee\Release\createfilee.exe;#1" /manifest Release\createfilee.exe.intermediate.manifest
+FinalizeBuildStatus:
+  Deleting file "Release\createfilee.unsuccessfulbuild".
+  Touching "Release\createfilee.lastbuildstate".
+Done Building Project "c:\documents and settings\eleanor\my documents\visual studio 2010\Projects\createfilee\createfilee\createfilee.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.30

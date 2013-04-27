@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dllinject", "..\dllinject\dllinject\dllinject.vcxproj", "{6343E94F-6A3A-48C9-8CE5-714D7BC23CBD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "createremotethread", "createremotethread\createremotethread.vcxproj", "{B1235F64-51EB-48E9-A40C-C1AD8B7185FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "setwindowshookex", "setwindowshookex\setwindowshookex.vcxproj", "{037D3841-098D-49D7-B3E4-5D29038CC174}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6343E94F-6A3A-48C9-8CE5-714D7BC23CBD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6343E94F-6A3A-48C9-8CE5-714D7BC23CBD}.Debug|Win32.Build.0 = Debug|Win32
+		{6343E94F-6A3A-48C9-8CE5-714D7BC23CBD}.Release|Win32.ActiveCfg = Release|Win32
+		{6343E94F-6A3A-48C9-8CE5-714D7BC23CBD}.Release|Win32.Build.0 = Release|Win32
+		{B1235F64-51EB-48E9-A40C-C1AD8B7185FC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B1235F64-51EB-48E9-A40C-C1AD8B7185FC}.Debug|Win32.Build.0 = Debug|Win32
+		{B1235F64-51EB-48E9-A40C-C1AD8B7185FC}.Release|Win32.ActiveCfg = Release|Win32
+		{B1235F64-51EB-48E9-A40C-C1AD8B7185FC}.Release|Win32.Build.0 = Release|Win32
+		{037D3841-098D-49D7-B3E4-5D29038CC174}.Debug|Win32.ActiveCfg = Debug|Win32
+		{037D3841-098D-49D7-B3E4-5D29038CC174}.Debug|Win32.Build.0 = Debug|Win32
+		{037D3841-098D-49D7-B3E4-5D29038CC174}.Release|Win32.ActiveCfg = Release|Win32
+		{037D3841-098D-49D7-B3E4-5D29038CC174}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
