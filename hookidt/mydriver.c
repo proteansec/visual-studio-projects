@@ -31,6 +31,8 @@ typedef struct _IDTR {
 } IDTR;
 #pragma pack()
 
+/* Global variable for storing old ISR address. */
+UINT32 oldISRAddress;
 
 
 /*
@@ -91,14 +93,36 @@ UINT32 GetISRAddress(UINT16 service) {
 	israddr += descaddr->offset00;
 	DbgPrint("Address of the ISR is: %x.\r\n", israddr);
 	
+	/* store old ISR address in global variable, so we can use it later */
+	oldISRAddress = israddr;
+	
 	return israddr;
+}
+
+/*
+ * Function that can be called directly from assembly inside HookRoutine.
+ */
+void DebugPrint(UINT32 d) {
+  DbgPrint("[*] Inside Hook Routine - dispatch %d called", d);
 }
 
 /*
  * Hook function. 
  */
 __declspec(naked) HookRoutine() {
-	DbgPrint("Hook Routine called.\r\n");
+	__asm {
+		pushad;
+		pushfd;
+		
+		//push eax;
+		//call DebugPrint;
+		
+		popfd;
+		popad;
+		
+		jmp oldISRAddress;
+	}
+	
 }
 
 /*
@@ -124,6 +148,11 @@ void HookISR(UINT16 service, UINT32 hookaddr) {
 		hookaddr_high = (UINT16)hookaddr;
 		DbgPrint("Hook Address Lower: %x\r\n", hookaddr_low);
 		DbgPrint("Hook Address Higher: %x\r\n", hookaddr_high);
+		
+		__asm { cli }
+		descaddr->offset00 = hookaddr_low;
+		descaddr->offset16 = hookaddr_high;
+		__asm { sti }
 	}
 }
 
@@ -160,7 +189,6 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT  pDriverObject, PUNICODE_STRING  pRegistryPa
         IoCreateSymbolicLink(&usDosDeviceName, &usDriverName);
 		
 		/* hook IDT */
-		GetISRAddress(0x2e);
 		HookISR(0x2e, (UINT32)HookRoutine);
     }
 
@@ -171,8 +199,16 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT  pDriverObject, PUNICODE_STRING  pRegistryPa
  /*
   * MyDriver_Unload: called when the driver is unloaded.
   */
-VOID MyDriver_Unload(PDRIVER_OBJECT  DriverObject) {    
-    UNICODE_STRING usDosDeviceName;
+VOID MyDriver_Unload(PDRIVER_OBJECT  DriverObject) {
+	/* local variables */
+	UNICODE_STRING usDosDeviceName;
+
+	/* restore the hook */
+	if(oldISRAddress != NULL) {
+		HookISR(0x2e, (UINT32)oldISRAddress);
+	}
+
+	/* delete the driver */
     DbgPrint("MyDriver_Unload Called \r\n");
     RtlInitUnicodeString(&usDosDeviceName, L"\\DosDevices\\MyDriver");
     IoDeleteSymbolicLink(&usDosDeviceName);
