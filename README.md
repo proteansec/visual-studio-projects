@@ -1,4 +1,4 @@
-Copyright (C) 2012-2013, Dejan Lukan
+Copyright (C) 2012-2014, Protean Security
 
 All rights reserved.
 
@@ -28,6 +28,10 @@ The Visual Studio Projects contain the projects described below.
 * **helloworld**
 
     This is a "Hello World" project that uses a software interrupt to instruct a debugger to pause execution just before the printf statement is reached. Basically it uses the __asm { int 0x3 }; code block.
+
+* **hookidt**
+
+	Windows kernel driver that hooks IDT descriptors and runs arbitrary function when the chosen interrupt is triggered.
 
 * **isdebuggerpresent**
 
