@@ -32,7 +32,7 @@ typedef struct _IDTR {
 #pragma pack()
 
 /* Global variable for storing old ISR address. */
-UINT32 oldISRAddress;
+UINT32 oldISRAddress = NULL;
 
 
 /*
