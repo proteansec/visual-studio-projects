@@ -110,19 +110,19 @@ void DebugPrint(UINT32 d) {
  * Hook function. 
  */
 __declspec(naked) HookRoutine() {
+	KeLowerIrql(PASSIVE_LEVEL);
 	__asm {
 		pushad;
 		pushfd;
 		
-		//push eax;
-		//call DebugPrint;
+		push eax;
+		call DebugPrint;
 		
 		popfd;
 		popad;
 		
 		jmp oldISRAddress;
 	}
-	
 }
 
 /*
