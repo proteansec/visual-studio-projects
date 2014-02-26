@@ -33,6 +33,10 @@ The Visual Studio Projects contain the projects described below.
 
 	Windows kernel driver that hooks IDT descriptors and runs arbitrary function when the chosen interrupt is triggered.
 
+* **hookmsr**
+
+	Windows kernel driver that hooks MSR entries and runs arbitrary function when the sysenter instruction is used for system calls.
+
 * **isdebuggerpresent**
 
     A project that uses IsDebuggerPresent function that can detect whether a debugger is being used to debug the current program. There are two articles where this project is relevant:
