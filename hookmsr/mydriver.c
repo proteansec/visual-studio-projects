@@ -1,12 +1,6 @@
 #include <wdm.h>
 #include <ntddk.h>
 
-#include <excpt.h>
-#include <ntdef.h>
-#include <ntstatus.h>
-#include <bugcodes.h>
-#include <ntiologc.h>
-
 #define IA32_SYSENTER_EIP 0x176
 
 /* Function Prototypes */
@@ -46,7 +40,7 @@ MSR GetMSRAddress(UINT32 reg) {
 	UINT32 lowvalue;
 	UINT32 highvalue;
 	
-	/* get address of the IDT table */	
+	/* get address of the MSR table */	
     __asm {
 		push eax;
 		push ecx;
@@ -79,7 +73,7 @@ void SetMSRAddress(UINT32 reg, PMSR msr) {
 	lowvalue = msr->value_low;
 	highvalue = msr->value_high;
 	
-	/* get address of the IDT table */	
+	/* get address of the MSR table */	
     __asm {
 		push eax;
 		push ecx;
@@ -267,7 +261,7 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT  pDriverObject, PUNICODE_STRING  pRegistryPa
         /* Create a Symbolic Link to the device. MyDriver -> \Device\MyDriver */
         IoCreateSymbolicLink(&usDosDeviceName, &usDriverName);
 		
-		/* hook IDT */
+		/* hook MSR */
 		//HookMSR(IA32_SYSENTER_EIP, (UINT32)HookRoutine);
 		HookAll(IA32_SYSENTER_EIP, (UINT32)HookRoutine);
     }
