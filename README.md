@@ -37,6 +37,10 @@ The Visual Studio Projects contain the projects described below.
 
 	Windows kernel driver that hooks MSR entries and runs arbitrary function when the sysenter instruction is used for system calls.
 
+* **hookssdt**
+
+	Windows kernel driver that hooks SSDT system calls, which is able to hook arbitrary system calls regardless of whether they're being called with "int 0x2e" or sysenter.
+	
 * **isdebuggerpresent**
 
     A project that uses IsDebuggerPresent function that can detect whether a debugger is being used to debug the current program. There are two articles where this project is relevant:
