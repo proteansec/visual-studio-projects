@@ -31,7 +31,7 @@ The Visual Studio Projects contain the projects described below.
 
 * **hookidt**
 
-	Windows kernel driver that hooks IDT descriptors and runs arbitrary function when the chosen interrupt is triggered.
+	Windows kernel driver that hooks IDT descriptors and runs arbitrary function when the chosen interrupt is invoked.
 
 * **hookmsr**
 
