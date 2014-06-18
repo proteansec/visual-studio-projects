@@ -3,7 +3,7 @@
 #include <string.h>
 
 #define DOMAINLEN  16
-#define TLD ".infosec"
+#define TLD ".proteansec"
 
 /*
  * Generate a domain with DGA algorithm based on year/month/day variables.
