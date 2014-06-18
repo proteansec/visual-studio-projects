@@ -4,6 +4,7 @@ All rights reserved.
 
 The Visual Studio Projects contain the projects described below.
 * **dga**
+
     Code samples for domain generation algorithm (DGA) article.
 
 * **createfile**
