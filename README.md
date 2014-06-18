@@ -3,10 +3,12 @@ Copyright (C) 2012-2013, Dejan Lukan
 All rights reserved.
 
 The Visual Studio Projects contain the projects described below.
+* **dga**
+    Code samples for domain generation algorithm (DGA) article.
 
 * **createfile**
 
-  A project that was used in the [The Sysenter Instruction and 0x2e Interrupt](http://resources.infosecinstitute.com/the-sysenter-instruction-and-0x2e-interrupt/) article.
+    A project that was used in the [The Sysenter Instruction and 0x2e Interrupt](http://resources.infosecinstitute.com/the-sysenter-instruction-and-0x2e-interrupt/) article.
 
 * **createremotethread**
 
