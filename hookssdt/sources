@@ -1,0 +1,5 @@
+TARGETNAME=mydriver
+TARGETTYPE=DRIVER
+SOURCES=mydriver.c
+UMTYPE=console
+UMENTRY=DriverEntry

@@ -1,4 +1,4 @@
-Copyright (C) 2012-2013, Dejan Lukan
+Copyright (C) 2012-2014, Protean Security
 
 All rights reserved.
 
@@ -31,6 +31,18 @@ The Visual Studio Projects contain the projects described below.
 
     This is a "Hello World" project that uses a software interrupt to instruct a debugger to pause execution just before the printf statement is reached. Basically it uses the __asm { int 0x3 }; code block.
 
+* **hookidt**
+
+	Windows kernel driver that hooks IDT descriptors and runs arbitrary function when the chosen interrupt is invoked.
+
+* **hookmsr**
+
+	Windows kernel driver that hooks MSR entries and runs arbitrary function when the sysenter instruction is used for system calls.
+
+* **hookssdt**
+
+	Windows kernel driver that hooks SSDT system calls, which is able to hook arbitrary system calls regardless of whether they're being called with "int 0x2e" or sysenter.
+	
 * **isdebuggerpresent**
 
     A project that uses IsDebuggerPresent function that can detect whether a debugger is being used to debug the current program. There are two articles where this project is relevant:
