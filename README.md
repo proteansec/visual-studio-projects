@@ -9,7 +9,7 @@ The Visual Studio Projects contain the projects described below.
 
 * **createfile**
 
-    A project that was used in the [The Sysenter Instruction and 0x2e Interrupt](http://resources.infosecinstitute.com/the-sysenter-instruction-and-0x2e-interrupt/) article.
+    A project that was used in the [The Sysenter Instruction and 0x2e Interrupt](http://www.proteansec.com/reverse-engineering/the-sysenter-instruction-and-0x2e-interrupt/) article.
 
 * **createremotethread**
 
@@ -22,7 +22,7 @@ The Visual Studio Projects contain the projects described below.
 
 * **dlltest**
    
-    This is a sample DLL that was used in the article accessible here: [Api Hooking DetoursInfosec](http://resources.infosecinstitute.com/api-hooking-detours/).
+    This is a sample DLL that was used in the article accessible here: [Api Hooking Detours](http://www.proteansec.com/exploit-development/api-hooking-detours/).
 
 * **flags**
 
@@ -47,7 +47,7 @@ The Visual Studio Projects contain the projects described below.
 * **isdebuggerpresent**
 
     A project that uses IsDebuggerPresent function that can detect whether a debugger is being used to debug the current program. There are two articles where this project is relevant:
-    [Anti-Debugging: Detecting System Debugger](http://resources.infosecinstitute.com/anti-debugging-detecting-system-debugger/)
+    [Anti-Debugging: Detecting System Debugger](http://www.proteansec.com/reverse-engineering/anti-debugging-detecting-system-debugger/)
 
 * **kerneldebug**
   
@@ -55,7 +55,7 @@ The Visual Studio Projects contain the projects described below.
 
 * **linearsweep**
   
-    This program was used in the following article [Linear Sweep vs Recursive Disassembling Algorithm](http://resources.infosecinstitute.com/linear-sweep-vs-recursive-disassembling-algorithm/)
+    This program was used in the following article [Linear Sweep vs Recursive Disassembling Algorithm](http://www.proteansec.com/reverse-engineering/linear-sweep-vs-recursive-disassembling-algorithm/)
 
 * **setwindowshookex**
 
