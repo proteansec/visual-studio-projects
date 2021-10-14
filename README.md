@@ -2,7 +2,7 @@ Copyright (C) 2012-2014, Protean Security
 
 All rights reserved.
 
-The Visual Studio Projects contain the projects described below.
+The Visual Studio Projects repository contain the following projects described below!
 * **dga**
 
     Code samples for domain generation algorithm (DGA) article.
